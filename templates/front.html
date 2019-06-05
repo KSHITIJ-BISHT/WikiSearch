@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Input Wiki Page</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<title>Wiki | Home</title>
 </head>
 <body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">WikiSearch</a>
+    </div>
+     <ul class="nav navbar-nav">
+      <li><a href="/">Home</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="main" align="center">
+  
+  <!-- Another variation with a button -->
+  <form method="POST"  action="/resultwiki">
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Enter the search query:" name="query">
+    <div class="input-group-append">
+      <button class="btn btn-secondary" type="submit">Search
+      </button>
+    </div>
+  </div>
+  </form>  
+</div>
+
+<!-- 	<div align="center" >
 	<form method="POST"  action="/resultwiki">
-		<label>Enter the query:</label>
-		<input type="text" name="query">
+		<label >Enter the query:</label>
+		<br></br>
+		<input type="text" name="query" >
+		<br></br>
 		<button type="submit">Search</button>
 	</form>
-
+    </div> -->
 </body>
 </html>
