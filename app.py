@@ -4,8 +4,6 @@ import wikipedia, os
 
 app=Flask(__name__)
 
-summary=[]
-
 @app.route("/",methods=['GET'])
 def inputWikipedia():
 	return render_template("front.html")
